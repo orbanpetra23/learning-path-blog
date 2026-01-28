@@ -57,6 +57,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem "foreman"
 end
 
 group :test do
@@ -70,3 +71,5 @@ gem "devise", "~> 5.0"
 gem "tailwindcss-rails", "~> 4.4"
 
 gem "aws-sdk-s3", require: false
+
+gem 'pagy', '~> 9.3'

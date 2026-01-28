@@ -5,6 +5,10 @@ class BlogPostsController < ApplicationController
 
     def index
         @blog_posts = user_signed_in? ? BlogPost.sorted : BlogPost.published.sorted
+        #@pagy, @blog_posts = pagy(@blog_posts) #pagy setup
+        #@pagy, @blog_posts = pagy(BlogPost.all, limit: 10)
+        #@pagy, @blog_posts = pagy(BlogPost.all, limit: 10) rescue pagy(BlogPost.all, items: 10)
+        @pagy, @blog_posts = pagy(BlogPost.all, limit: 10)
     end
     
     def show
