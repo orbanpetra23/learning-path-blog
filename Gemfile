@@ -72,4 +72,4 @@ gem "tailwindcss-rails", "~> 4.4"
 
 gem "aws-sdk-s3", require: false
 
-gem 'pagy', '~> 9.3'
+gem 'pagy', '~> 43.2'
